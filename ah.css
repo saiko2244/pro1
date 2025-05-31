@@ -1,0 +1,342 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.contener{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    position: relative;    
+    background-image: linear-gradient(to right , #a8a7a727 , #f0eeee79)
+    , url(bac.jpg);
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contener:hover{ background-image: linear-gradient(to right , #a8a7a727 ,transparent)
+    , url(bac.jpg);
+
+
+}
+.contener a{
+    text-decoration: none;
+}
+.contener .logo{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-right: 200px;
+    animation: logo1  10s ease 1s infinite;
+    
+    & i{
+        color: #2110be98;
+        font-size: 30px;
+        
+    }
+    & span{
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: bold;
+        color: #2b2828 ; 
+        font-size: 20px;    
+    }
+    & :hover{
+        color: rgb(184, 50, 50);
+        background-image: linear-gradient(to right, rgba(102, 98, 98, 0.521), black);
+
+    }
+}
+@keyframes logo1{
+    0%{
+        translate: 0 0;
+    }
+    35%{
+        
+        translate: 30px 0;
+   }
+    
+    
+}
+.contener a span{
+        text-transform: capitalize;
+        letter-spacing: 1.5px;
+        color: rgba(49, 47, 47, 0.637); }
+    .contener a span:hover{
+         color: rgb(184, 50, 50);
+        background-image: linear-gradient(to right, rgba(102, 98, 98, 0.521), black);
+    }
+    
+    .nav1{
+        height: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 40px;
+        padding: 10px;
+        flex-wrap: wrap;                         
+    }
+    .nav1 .price{
+        display: flex;
+        gap: 10px;
+        background-color: rgba(23, 13, 83, 0.836);
+        padding: 5px;
+        border-radius: 20px;
+        position: relative;
+        
+        & i{
+            font-size: 20px;
+            color: rgba(179, 195, 238, 0.534);
+            margin-left: 10px;            
+        }
+        & p{
+            font-size: larger;
+            color: white;
+            width: 70px;
+        }
+        & .num{
+            position: absolute;
+            top: 0;
+            right: 0;
+            color:white;
+            background-color: red;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -10px;
+        }       
+    }
+    .nav1 .sign{
+        display: flex;
+        gap: 10px;
+        background-color: white;
+        padding: 5px;
+        border-radius: 20px;
+        border: .5px solid gray;
+    & i{
+        font-size: 25px;
+        
+        }
+    & p{
+        width: 70px;
+        font-size: 18px;
+        text-transform: capitalize;
+    }
+        }
+    .nav1 .reg{
+        display: flex;
+        gap: 10px;
+        background-color: rgba(233, 227, 227, 0.575);
+        padding: 5px;
+        border-radius: 20px;
+        border: .5px solid rgb(26, 25, 25);
+    & i{
+        font-size: 25px;
+        
+        }
+    & p{
+        width: 70px;
+        font-size: 18px;
+        text-transform: capitalize;
+    }
+        }
+    @media (width < 700px){
+       .contener a{
+        display: none;
+       } 
+       .nav1{
+        display: flex;
+        justify-content: center;
+       }
+       .contener{
+        background-position:left ;
+       }
+       .content{
+        text-align: center;
+       }
+       
+    }
+    .contener a .logo :hover,.contener a span :hover,
+     .contener .nav1 .price:hover,.contener .nav1 .sign:hover,
+     .contener .nav1 .reg:hover, .content input:hover{
+        background-image: linear-gradient(to right, #ff00007e , rgba(0, 0, 0, 0.418));
+    }
+    .content{
+        position: absolute;
+        bottom: 50%;
+        left: 150px;
+        letter-spacing: 1px;
+        line-height: 30px;
+    & h4{
+        color: rgb(119, 116, 116);
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    & .p1{
+        font-size: 25px;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    & .p2{
+        font-size: 25px;
+        font-weight: 400;
+        & span{
+            color: red;
+        }
+    }
+    & .p3{
+        font-size: 17px;
+    }
+    & input{
+        font-size: large;
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+        padding: 1px 10px;
+    }
+    }
+    
+
+.min-content{
+    background-color: rgba(240, 238, 238, 0.849);
+    width: 100%;
+    height: 100%;
+    padding:10px;
+    margin: 0;
+    position: relative;
+}
+.min-content .title{
+    padding-bottom: 20px;
+    margin: 10px;
+    display: flex;
+    gap: 10px;
+    font-size: x-large;
+    text-transform: capitalize;
+    font-weight: bolder;
+    animation: tit1 8s ease .5s infinite normal;
+}
+@keyframes tit1{
+    0%{
+        color: #e91010;
+        opacity: .8;
+        }
+    25%{
+        color: #e91010;
+        opacity: .8;
+    }
+    50%{
+        color: #0808ec;
+        opacity: .8;        
+    }
+}
+.min-content .products{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+
+.min-content .pro1{
+    background-color: white;
+    width: 300px;
+    margin: auto;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: rgba(26, 25, 25, 0.342)  0px .3rem 1px;
+    transition: .2s;
+
+    & a img{
+        text-align: center;
+        padding-left: 20px;
+        animation: pic1 8s ease .1s infinite normal both;
+    }
+    & .titlt1{
+        padding-bottom: 20px;
+    }
+    & .titlt1 h2{
+        padding-left: 5px;
+        text-transform: capitalize;
+        font-weight: 700;       
+    }
+    & .titlt1 p{
+        padding-left: 5px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+    & .price{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 5px;
+    }    
+    & .price span{
+        padding-left: 15px;
+        color: red;
+        font-size: larger;
+        font-weight: 700;
+    }
+    & .price button{
+        display: flex;
+        gap: 5px;
+        font-size: large;
+        margin-right: 10px;
+        background-color: rgba(7, 71, 248, 0.89);  
+        color: white;
+        padding: 7px;
+        border-radius: 10px;
+        border:0px solid     
+
+    }
+    & :hover{ 
+    scale: 1.02;
+}
+}   
+    
+    
+
+@keyframes pic1 {
+    0%{    
+           translate: 15px 0; 
+        }
+    50%{           
+           translate: -15px 0; 
+        }           
+    }
+@media (width < 600px){
+    .min-content{
+        width: 100%;
+    }
+    .min-content .title{
+        display: flex;
+        justify-content: center;
+    }  
+    .foo1{
+        width: 100%px;
+    } 
+}
+.foo1{
+    padding: 15px;
+    margin-top: 15px;
+    width: 95%;
+    background-color: black;
+    color: white;
+    font-size: large;
+    text-transform: capitalize;
+    text-align: center;
+    border:  5px  solid black;
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px;
+
+    & span{
+        color: red;
+    }
+
+}

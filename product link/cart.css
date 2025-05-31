@@ -1,0 +1,288 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+body{
+    width:  100%;
+    display: grid;
+    align-items: center;
+    grid-template-rows: 10% 1fr 10%;
+}
+.contener{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    position: relative;    
+    background-color: rgba(0, 0, 0, 0.822);
+   
+}
+
+.contener a{
+    text-decoration: none;
+}
+.contener .logo{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-right: 200px;
+    animation: logo1  10s ease 1s infinite;
+    
+    & i{
+        color: white;
+        font-size: 30px;
+        
+    }
+    & span{
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: bold;
+        color: white ; 
+        font-size: 20px;    
+    }
+    & :hover{
+        color: rgb(184, 50, 50);
+        background-image: linear-gradient(to right, rgba(102, 98, 98, 0.521), black);
+
+    }
+}
+@keyframes logo1{
+    0%{
+        translate: 0 0;
+    }
+    35%{
+        
+        translate: 30px 0;
+   }
+    
+    
+}
+.contener a span{
+        text-transform: capitalize;
+        letter-spacing: 1.5px;
+        color: white; }
+    .contener a span:hover{
+         color: rgb(184, 50, 50);
+        background-image: linear-gradient(to right, rgba(102, 98, 98, 0.521), black);
+    }
+.nav1{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 40px;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+    .nav1 .price{
+        display: flex;
+        gap: 10px;
+        background-color: rgba(23, 13, 83, 0.836);
+        padding: 5px;
+        border-radius: 20px;
+        position: relative;
+        
+        & i{
+            font-size: 20px;
+            color: rgba(179, 195, 238, 0.534);
+            margin-left: 10px;            
+        }
+        & p{
+            font-size: larger;
+            color: white;
+            width: 70px;
+        }
+        & .num{
+            position: absolute;
+            top: 0;
+            right: 0;
+            color:white;
+            background-color: red;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -10px;
+        }       
+    }
+    .nav1 .sign{
+        display: flex;
+        gap: 10px;
+        background-color: white;
+        padding: 5px;
+        border-radius: 20px;
+        border: .5px solid gray;
+    & i{
+        font-size: 25px;
+        
+        }
+    & p{
+        width: 70px;
+        font-size: 18px;
+        text-transform: capitalize;
+    }
+        }
+    .nav1 .reg{
+        display: flex;
+        gap: 10px;
+        background-color: rgba(233, 227, 227, 0.575);
+        padding: 5px;
+        border-radius: 20px;
+        border: .5px solid rgb(26, 25, 25);
+    & i{
+        font-size: 25px;
+        
+        }
+    & p{
+        width: 70px;
+        font-size: 18px;
+        text-transform: capitalize;
+    }
+        }
+   
+       .contener a .logo :hover,.contener a span :hover,
+     .contener .nav1 .price:hover,.contener .nav1 .sign:hover,
+     .contener .nav1 .reg:hover, .content input:hover{
+        background-image: linear-gradient(to right, #ff00007e , rgba(0, 0, 0, 0.418));
+    }
+    .foo1{
+    padding: 15px;
+    margin-top: 15px;
+    width: 95%;
+    background-color: black;
+    color: white;
+    font-size: large;
+    text-transform: capitalize;
+    text-align: center;
+    border:  5px  solid black;
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px;
+    position: absolute;
+    bottom: 0;
+
+    & span{
+        color: red;
+    }
+
+}
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-inline: auto ;
+    gap: 30px;
+    padding: 10px;
+    border-top: 3px solid #0000ff96;
+    font-size: 20px;
+    background-color: white;
+    box-shadow: #bebebe 0px 3px ;
+& i{
+    color: red;
+}
+& p{
+    font-weight: 300;
+}
+& .plus{
+    display:flex;
+    justify-content: center;
+    gap: 3px;
+    align-items: center;    
+}
+& button{
+        background-color: rgba(28, 28, 219, 0.76);
+        color: white;
+        border-color: white;
+        font-size: large;
+        
+    }
+& .p1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+& .p1 img{
+    padding-top: 5px;
+
+}
+}
+.clear{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 15px;
+    height: 35px;
+    gap: 10px;
+    color: white;
+    background-color: red;
+    font-size: larger;
+    text-transform: capitalize;
+    width: fit-content;
+    padding-inline: 10px;
+    border-color: white;
+}
+.details:hover, .clear:hover{
+    scale: 1.02;
+}
+.out{
+    width: 20%;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    line-height: 20px;
+    box-shadow: grey 0px 2px 2px 2px ;
+    margin-top: 15px;
+& span{
+    font-size: 25px;
+    background-color: rgba(185, 181, 181, 0.288);
+    text-transform: capitalize;
+}
+& .total{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    gap: 90px;
+}
+& .chekout{
+    font-size: large;
+    background-color: rgba(28, 28, 219, 0.76);
+    color: white;
+    width: 100%;
+    padding:10px ;
+
+}
+}
+@media (min-width:751px) and (max-width:1200px){
+    .out{
+        width: 60%;
+    }
+}
+    
+@media (min-width:150px) and (max-width:750px){
+    .out{
+        width: 60%;
+    }
+    
+    .contener{
+        display: grid;
+        grid-template-columns: auto;
+        margin: auto;
+        overflow: hidden;
+        flex-wrap: wrap;
+        & a{
+            display: none;
+        }
+    }
+    .nav1{
+        flex-direction: column;
+        margin-top: 0;
+        padding: 0;
+        height: 50px;
+    }
+}
